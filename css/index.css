@@ -1,5 +1,11 @@
 :root {
     --main-color : #00B8FF;
+    --heading-font-color : #374553;
+    --paragraph-font-color : #AAAAAA;
+    --background-gray-color : #f7f8f9; 
+    --footer-background-color : #28323C;
+    --footer-nav-font-color : #C5C8CE;
+    --footer-font-color :#646f7c;
 }
 
 body {
@@ -80,4 +86,132 @@ h1 > a {
     color: white;
     font-weight: 900;
     line-height: 130%;
+}
+
+#advantages-container {
+    padding : 80px 32px;
+    display: flex;
+    flex-direction: column;
+}
+
+.advantage {
+    max-width: 800px;
+    margin: 0 auto;
+    margin-bottom: 160px;
+}
+
+.advantage:last-child {
+    margin-bottom: 0;
+}
+
+.advantage > h2 {
+    font-size: 40px;
+    font-weight: 600;
+    color: var(--heading-font-color);
+    margin-bottom: 32px;
+    display: flex;
+    align-items: baseline;
+    gap: 4px;
+}
+
+.advantage > h2::after {
+    display: block;
+    content: '';
+    width: 10px;
+    height: 10px;
+    background-color: var(--main-color);
+    border-radius: 50%;
+
+
+}
+
+.advantage > p {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--paragraph-font-color);
+    margin-bottom: 48px;
+    line-height: 150%;
+}
+
+#start-together {
+    height: 424px;
+    background-color: var(--background-gray-color);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 38px;
+    font-weight: 500;
+    line-height: 150%;
+    color: var(--paragraph-font-color);
+    overflow: hidden;
+}
+
+.point-blue {
+    color: var(--main-color);
+}
+
+.count-up {
+    font-weight: 600;
+}
+
+.incline {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: var(--main-color);
+    transform: translateX(80%) skewX(-30deg);
+}
+
+footer {
+    background-color: var(--footer-background-color);
+    padding: 40px 16px 100px;
+    color: var(--footer-font-color);
+}
+
+.footer-container {
+    max-width: 980px;
+    margin: 0 auto;
+}
+
+footer a {
+    color: var(--footer-nav-font-color);
+    text-decoration: none;
+}
+
+.sns-container {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 16px;
+}
+
+footer nav {
+    display: flex;
+    gap: 24px;
+    margin-bottom: 16px;
+    flex-wrap: wrap;
+}
+
+.important-information {
+    color: #fff;
+}
+
+
+.information {
+    display: flex;
+    font-size: 13px;
+    line-height: 200%;
+}
+
+.information > div {
+    flex-basis: 50%;
+}
+
+.information dl {
+    display: flex;
+}
+
+.biz-info {
+    text-decoration: underline;
 }
